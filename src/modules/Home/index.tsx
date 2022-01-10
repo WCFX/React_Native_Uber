@@ -2,10 +2,8 @@ import React from 'react';
 
 import Icon from 'react-native-vector-icons/Feather';
 
-// import {  } from '~/components';
-// import {  } from '~/assets';
-// import {  } from '~/helpers';
-// import {  } from '~/types';
+import { Button } from '~/components';
+
 import * as S from './styles';
 
 const Home = () => {
@@ -13,7 +11,9 @@ const Home = () => {
     <S.Container>
       <S.Title>Hello Motherfuckers</S.Title>
       <S.Description>Wagnifico na parada</S.Description>
-      <Icon name="home" size={24} color="#fff" />
+      <Button onPress={() => console.log('Matue')}>
+        <Icon name="home" size={24} color="#fff" />
+      </Button>
     </S.Container>
   );
 };
