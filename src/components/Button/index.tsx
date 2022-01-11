@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { TouchableOpacity } from 'react-native';
 
 interface Props {
-  children: React.ReactNode;
+  children: ReactNode;
   onPress: () => void;
 }
 
